@@ -36,7 +36,8 @@ const MyModules = () => {
         <Flex flex={1} alignItems={'center'}>
           <Image src={'/imgs/module/plugin.svg'} alt={''} mr={2} h={'24px'} />
           <Box className="textlg" letterSpacing={1} fontSize={['20px', '24px']} fontWeight={'bold'}>
-            {t('plugin.My Plugins')}({t('common.Beta')})
+            {t('plugin.My Plugins')}
+            {/* {t('plugin.My Plugins')}({t('common.Beta')}) */}
           </Box>
         </Flex>
         {userInfo?.team?.canWrite && (

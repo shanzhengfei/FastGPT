@@ -32,16 +32,18 @@ const TeamMenu = () => {
         }
       }}
       transform={'none !important'}
-      onClick={() => {
-        if (feConfigs.isPlus) {
-          onOpen();
-        } else {
-          toast({
-            status: 'warning',
-            title: t('common.Business edition features')
-          });
-        }
-      }}
+      /* 团队点击功能 */
+      // onClick={() => {
+      //   if (feConfigs.isPlus) {
+      //     onOpen();
+      //   } else {
+      //     onOpen();
+      //     // toast({
+      //     //   status: 'warning',
+      //     //   title: t('common.Business edition features')
+      //     // });
+      //   }
+      // }}
     >
       <MyTooltip label={t('user.team.Select Team')}>
         <Flex w={'100%'} alignItems={'center'}>

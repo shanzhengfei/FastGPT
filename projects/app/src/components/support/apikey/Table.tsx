@@ -92,7 +92,7 @@ const ApiKeyTable = ({ tips, appId }: { tips: string; appId?: string }) => {
                 ml={1}
                 color={'primary.500'}
               >
-                {t('common.Read document')}
+                {/* {t('common.Read document')} */}
               </Link>
             )}
           </Flex>
