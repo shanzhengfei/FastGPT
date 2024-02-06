@@ -1215,7 +1215,6 @@ function ChatAvatar({ src, type }: { src?: string; type: 'Human' | 'AI' }) {
 }
 
 function Empty() {
-  const { data: chatProblem } = useMarkdown({ url: '/chatProblem.md' });
   const { data: versionIntro } = useMarkdown({ url: '/versionIntro.md' });
 
   return (
@@ -1223,9 +1222,6 @@ function Empty() {
       {/* version intro */}
       <Card p={4} mb={10} minH={'200px'}>
         <Markdown source={versionIntro} />
-      </Card>
-      <Card p={4} minH={'600px'}>
-        <Markdown source={chatProblem} />
       </Card>
     </Box>
   );
